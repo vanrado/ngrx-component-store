@@ -1,0 +1,3 @@
+<h4>Time slider</h4>
+<div>position/offset: {{ thumpPosition?.thumbPosition}} / {{ thumpPosition?.sliderOffset }}</div>
+<button *ngFor="let section of sections" (click)="changePosition(section)">{{ section }}</button>

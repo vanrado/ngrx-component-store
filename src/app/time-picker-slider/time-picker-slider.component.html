@@ -1,0 +1,4 @@
+<app-datetime-picker-box [date]="date$ | async" (dateChange)="onDatePickerChange($event)"></app-datetime-picker-box>
+
+<app-time-line [sections]="sections$ | async" [date]="date$ | async"
+               (dateChange)="onTimeLineChange($event)"></app-time-line>

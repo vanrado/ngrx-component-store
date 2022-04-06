@@ -1,0 +1,4 @@
+<h3>DateTimePicker box</h3>
+
+<p>current date: {{ date }} / {{ formatUnixDate() }}</p>
+<button *ngFor="let currentDate of dates" (click)="changeDate(currentDate)">{{ currentDate.toFormat(format) }}</button>
